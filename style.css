@@ -429,9 +429,15 @@ main__img--container{
     cursor: pointer;
 }
 
+@media screen and (min-width:880px) {
+    .services{
+        height: 1200px;
+    }
+}
+
 @media screen and (max-width:960px) {
     .services{
-        height: 1600px;
+        height: 2300px;
     }
 
     .services h1{
