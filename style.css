@@ -88,7 +88,7 @@
 
 a.navbar__links:hover{
     border-radius: 0.5rem;
-    color:white;
+    color:#93c491;
     transition: text-decoration 0.5s ease;
 }
 
@@ -218,7 +218,7 @@ a.navbar__links:hover{
 
 /* Main Section CSS */
 .main{
-    background-color: white;
+    background-color:#93c491;
 }
 
 .main__container{
@@ -278,7 +278,7 @@ a.navbar__links:hover{
     background: #294427;
 }
 
-main__img--container{
+.main__img--container{
     text-align: center;
 }
 
@@ -339,13 +339,24 @@ main__img--container{
     }
 }
 
+
+/*Information CSS*/
+.information{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+
 /*Service Section CSS*/
 .services {
     background: #e1ffe0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 .services h1{
@@ -358,7 +369,7 @@ main__img--container{
 .services__container{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 
 .service__box {
@@ -446,6 +457,7 @@ main__img--container{
     }
 }
 
+
 @media screen and (max-width:480px) {
     .services{
         height: 1400px;
@@ -456,7 +468,7 @@ main__img--container{
     }
 
     .service__box{
-        width: 300px;
+        width: 100px;
     }
 }
 
