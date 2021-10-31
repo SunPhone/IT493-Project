@@ -66,7 +66,7 @@
 	<main>
 		<section class="container wrapper">
 			<div class="page-header">
-				<h2 class="display-5">Welcome home <?php echo $_SESSION['username']; ?></h2>
+				<h2 class="display-5">Welcome <?php echo $_SESSION['username']; ?></h2>
 			</div>
 			
 			<a href="/" class="btn btn-block btn-outline-success">2020 Tax Return: Download</a>
