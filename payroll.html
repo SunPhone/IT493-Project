@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Home</title>
+        <title>Payroll</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css"\>
         <script src="scripts.js"></script>
@@ -41,12 +41,11 @@
                         <a href="about.html" class="navbar__links">About Me</a> 
                      </li>
                      <li class="navbar__btn">
-                         <a href="loginSystem/login.php" class="button"><i class="far fa-user"></i>Sign In</a>
+                         <a href="/" class="button"><i class="far fa-user"></i>Sign In</a>
                      </li>
                      <li class="navbar__btn">
                         <a href="/" class="button"><i class="fas fa-shopping-cart"></i>Cart</a>
                     </li>
-                                          
                 </ul>
             </nav>
         </nav>
@@ -55,9 +54,9 @@
         <div class="main">
             <div class="main__container">
                 <div class="main__content">
-                    <h1>The Only Payroll Service That Truly Cares About Your Time</h1>
+                    <h1>The Only Payroll Service That Truly Cares About Your Time.</h1>
                     <p>Let us help you.</p>
-                    <button class="main__btn"><a href="/">Click here to see our services.</a></button> 
+                    <button class="main__btn"><a href="#servicelink">Click here to see our services.</a></button> 
                 </div>
                 <div class="main__img--container">
                     <img src="payroll.svg" alt="pic" id="main__img"/>
@@ -67,33 +66,38 @@
 
         <!-- Services Section -->
         <div class="services">
-            <h1>How can we help you today?</h1>
+            <h1 id = "servicelink">How can we help you today?</h1>
             <div class="services__container">
-                <div class="service__box">
-                    <h2><i class="fas fa-home"></i>Taxes</h2>
-                    <p>Get help with your taxes today.</p>
-                    <button><a href="tax.html">Click here</a></button>
+                <div class="plan__box">
+                    <h2><i class="fas fa-home"></i>Online Service.</h2>
+                    <p>Need help dealing with payroll? No worry, let's do it together.</p>
+                    <p id="price">Free</p>
+                    <div class ="paypal_btn">
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </div>
                 </div>
 
-                <div class="service__box">
-                        <h2><i class="fas fa-pen-alt"></i>Write Ups</h2>
-                        <p>Need a write up?</p>
-                        <button><a href="writeup.html">Click here</a></button>
-                </div>
-                
-                <div class="service__box">
-                    <h2><i class="fas fa-money-check-alt"></i>Payroll</h2>
-                    <p>Need help with payroll?</p>
-                    <button><a href="payroll.html">Click here </a></button>
-                </div>
-
-                <div class="service__box">
-                    <h2><i class="fas fa-tasks"></i>Project Control</h2>
-                    <p>Let us help you manage your projects.</p>
-                    <button><a href="project.html">Click here</a></button>
+                <div class="plan__box">
+                        <h2><i class="fas fa-pen-alt"></i>File with the an expert</h2>
+                        <p>Payroll problems? Let us give it a roll.</p>
+                        <p id="price">$25</p>
+                        <div class ="paypal_btn">
+                            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            </form>
+                        </div>                            
                 </div>
             </div>
         </div>
+
 
         <!-- Footer Section -->
         <div class="footer__container">
