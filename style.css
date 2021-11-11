@@ -287,6 +287,7 @@ a.navbar__links:hover{
     width: 80%;
 }
 
+
 @media screen and (max-width:768px) {
     .main__container{
         display: grid;
@@ -387,6 +388,7 @@ a.navbar__links:hover{
     position: relative;
 }
 
+
 .service__box:nth-child(2){
     background-image: url(writeup.jpg);
 }
@@ -455,6 +457,7 @@ a.navbar__links:hover{
         font-size: 2rem;
         margin-top: 12rem;
     }
+
 }
 
 
@@ -470,6 +473,83 @@ a.navbar__links:hover{
     .service__box{
         width: 100px;
     }
+    .plan__box{
+        width: 100px;
+    }
+}
+
+/*Plans box */
+.plan__box{
+    margin: 1rem;
+    height: 490px;
+    width: 600px;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    border: solid;
+    background:white;
+    background-image: url(online.jpg);
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.plan__box:nth-child(2){
+    background-image: url(professional.jpg);
+}
+
+.plan__box h2{
+    position: absolute;
+    top: 400px;
+    left: 10px;
+}
+
+.plan__box p{
+    position: absolute;
+    top: 440px;
+    left: 10px;
+}
+
+.plan__box button{
+    color: white;
+    padding: 20px 150px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background:#478B43;
+    position: absolute;
+    top: 480px;
+    left: 130px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.paypal_btn{
+    top: 450px;
+    left: 465px;
+    position: absolute;
+}
+
+#price{
+    font-size: 40px;
+    top: 400px;
+    left: 485px;
+    position: absolute;
+}
+
+.plan__box button a {
+    text-decoration: none;
+    color: white;
+}
+
+.plan__box button:hover{
+    background:#294427;
+}
+
+.plan__box:hover{
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
 }
 
 /*Footer CSS*/
